@@ -40,6 +40,7 @@ app.get("/", (req, res) => {
 app.get("/api/v1/weather", async (req, res) => {
   const data = await weather.getWeather();
   console.log(data);
+
   res.json({ data: data });
 });
 
