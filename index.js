@@ -34,7 +34,7 @@ const redisClient = redis.createClient({
 const redisPublisher = redisClient.duplicate();
 
 app.get("/", (req, res) => {
-  res.send("hello from server");
+  res.send("hello from server v5");
 });
 
 app.get("/api/v1/weather", async (req, res) => {
